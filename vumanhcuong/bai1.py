@@ -7,8 +7,10 @@ Welcome ,you have to answer some question.
 '''
 
 #ask for input
-age = raw_input ("Ban bao nhieu tuoi?")
-print "Tuoi cua toi la %s?" %(age+10005*2)
+age = input ("Ban bao nhieu tuoi?")
+#age = int(age)
+print "Tuoi cua toi la %d?" %(age+12)
+age = age+12
 
 
 #conditional
