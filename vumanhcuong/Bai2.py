@@ -1,16 +1,20 @@
 #Bai2:
 import time
 
-year_n = time.strftime("%Y")
-type(year_n) 	
+#Lay thoi gian la nam hien tai
+year = time.strftime("%Y")
+#Xem kieu cho nam string
+print "Kieu %s"%type(year) 	
 
-year_n = int(year_n)
-print "Nam %s"%year_n
+#Chuyen nam sang dang INT
+year = int(year)
+print "Nam %s"%year
 
 print '====================Bai2=================='
-year = input ("Nhap nam sinh :")
+year_born = input ("Nhap nam sinh :")
 print "Nam sinh cua ban la:%d:"%(year)
-tuoi = year_n - year
+tuoi = year - year_born
+
 print "Tuoi cua ban la %d"%tuoi
 if tuoi > 20:
 	print "ok"
