@@ -1,18 +1,18 @@
 #bai toan doan so
-import random
+import random 
 
 solandoan = 0
 
 print "Chao mung ban den voi tro choi Doan so. Ban ten la gi?"
 name = raw_input()
 
-print ('''Chao ''' + name + ''' toi vua doan mot con so
+print ('''Chao ''' + name + ''' ,Toi vua doan mot con so
 	Ban hay doan mot so ma ban cho do la binh phuong so toi vua doan''')
 
-X = random.randint(1,20)
+X = random.randint(1,20)	#chon so ngau nhien tu 1 den 20
 number = pow(X,2)
 
-while solandoan < 4:
+while solandoan < 4:	#vong lap, de thuc hien doan dc 4 lan
 	print "Moi ban doan"
 	B = input()
 
