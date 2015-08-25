@@ -7,7 +7,7 @@ import math
 _input = input("Nhap vao 1 so: ")
 #print "So ban vua nhap la %d" %_input
 _binhPhuong = input("Du doan binh phuong cua so vua nhap la: ") 
-_calBinhPhuong = pow(_input,2)
+_calBinhPhuong = float(pow(_input,2))
 #print _calBinhPhuong
 if _binhPhuong >= 0:
 	if _binhPhuong < _calBinhPhuong:
