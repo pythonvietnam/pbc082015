@@ -6,7 +6,7 @@ Bai toan doan so
 '''
 try:
 	a = input ("Nhap vao mot so bat ky A = ")
-	while a>0:
+	while b>0:
 		b = input ("Nhap vao so ban doan la binh phuong cua A = ")
 		c=a*a
 		if b < c:
