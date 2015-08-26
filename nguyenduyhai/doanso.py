@@ -3,20 +3,13 @@ import random
 
 solandoan = 0
 
-print "Chao mung ban den voi tro choi Doan so. Ban ten la gi?"
-name = raw_input()
-
-print ('''Chao ''' + name + ''' ,Toi vua doan mot con so
-	Ban hay doan mot so ma ban cho do la binh phuong so toi vua doan''')
-
 X = random.randint(1,20)	#chon so ngau nhien tu 1 den 20
 number = pow(X,2)
+print "Moi ban doan"
+B = input()
+B = int(B)
+while solandoan < 6 :	#vong lap, de thuc hien doan dc 4 lan
 
-while solandoan < 4:	#vong lap, de thuc hien doan dc 4 lan
-	print "Moi ban doan"
-	B = input()
-
-	B = int(B)
 	solandoan = solandoan + 1
 
 	if B < number:
