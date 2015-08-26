@@ -1,22 +1,27 @@
 
 #Tinh binh phuong
 
-print "===========Tinh binh phuong: CUONGVM===================="
+print "===========Tinh binh phuong===================="
 #import thu vien math
 import math
-
 a = 10
-nhapvao = input ( "Nhap vao so du doan:" )
-#Ham tinh binh phuon pow
-ketqua = pow(a,2)
-	print "Ket qua la: %d" %(pow(a,2))
+try:
+	nhapvao = input ( "Nhap vao so du doan:" )
+	#Ham tinh binh phuon pow
+	ketqua = int(pow(a,2))
+#print "Ket qua la: %d" %(pow(a,2))
+except:
+	print "Vui long nhap vao 1 so:"
 
-#So sanh gia tri nhap vao
-if nhapvao <  ketqua:
-	print "Nhap so lon hon"
-elif nhapvao == ketqua:
-	print "Tra loi dung"
-else:
-	nhapvao > ketqua
-	print "Nhap so nho hon"
-	
+while True:
+	if nhapvao <  ketqua:
+		print "Nhap so lon hon:"
+		nhapvao = input ( "Nhap vao so du doan:" )
+	elif nhapvao > ketqua:
+		print "Nhap so nho hon:"
+		nhapvao = input ( "Nhap vao so du doan:" )
+	else:
+		nhapvao == ketqua
+		print "Dung roi"
+		break
+
