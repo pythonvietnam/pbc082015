@@ -6,7 +6,7 @@ print "===========Tinh binh phuong===================="
 import math
 a = 10
 try:
-	nhapvao = input ( "Nhap vao so du doan:" )
+	nhapvao = raw_input ( "Nhap vao so du doan:" )
 	#Ham tinh binh phuon pow
 	ketqua = int(pow(a,2))
 #print "Ket qua la: %d" %(pow(a,2))
