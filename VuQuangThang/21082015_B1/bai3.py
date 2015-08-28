@@ -1,3 +1,4 @@
+###Tinh dien Tich##
 l = int(raw_input("Nhap chieu dai, dang so >0 \n"))
 while l<=0:
 	l=int(raw_input("Nhap LAI chieu dai, dang so >0 \n"))
