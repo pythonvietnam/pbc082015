@@ -5,13 +5,10 @@ Bai toan doan so
 ----------------
 '''
 try:
-	a = int(raw_input ("Nhap vao mot so bat ky A = "))
+	a = int(raw_input("Nhap vao mot so bat ky A = "))
 	while 1:
-		b = raw_input ("Nhap vao so ban doan la binh phuong cua A hoac an q de quit  ")
-		if b=="q":
-			print "bb"
-			break
-		if b=="Q":
+		b = raw_input("Nhap vao so ban doan la binh phuong cua A hoac an q de quit  ")
+		if b=="q" or b=="Q":
 			print "bb"
 			break
 		d=int(b)
