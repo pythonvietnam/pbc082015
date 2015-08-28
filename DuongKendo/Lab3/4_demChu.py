@@ -1,0 +1,1 @@
+# dem cac ky thu a,b,c trong chuoi
