@@ -13,7 +13,7 @@ try:
 		b = int(raw_input("Nhap vao 3 so bat ky:  "))
 		d.append(b)
 	a = sum(d)/3.0
-	print "Gia tri trung binh la: %f"%(a)
+	print "Gia tri trung binh la: %.2f"%(a)
 except:
         print "Hay nhap vao 1 so tu nhien"
 
