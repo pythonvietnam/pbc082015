@@ -18,7 +18,7 @@ for i in range(0,10):
 
 	if (_input == 'q' or _input == 'Q'):
 		print D
-		break;
+		break
 	else:
 		a = D.get(_input, 0)
 		a = a + 1
@@ -27,4 +27,4 @@ for i in range(0,10):
 print "Ket qua"
 for k in D:
 	print "D[%s] = %d " %(k, D[k])
-	print k, D[k]
+	#print k, D[k]
