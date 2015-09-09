@@ -14,8 +14,7 @@ s3=b[1]
 c=s3.split("to")
 x3=c[1:]
 
-print '''Trong chuoi:
-"fromXwithLove: I love Python. Send email to loitd@pythonvietnam.info"
+print '''Trong chuoi: "fromXwithLove: I love Python. Send email to loitd@pythonvietnam.info" thi: 
 '''
 print "Ten nguoi gui:  %s"%x1[0]
 print "Thong diep:  %s"%x2[0]
