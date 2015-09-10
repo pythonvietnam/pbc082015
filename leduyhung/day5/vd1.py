@@ -19,5 +19,5 @@ for i in range(10):
 		d[b] = v
 print "Ket qua tinh toan la:"
 for k in d:
-	print "chuoi %s da duoc nhap %d lan "%(b,int(d[b]))	
+	print "chuoi %s da duoc nhap %d lan "%(b,d[b])	
 	
