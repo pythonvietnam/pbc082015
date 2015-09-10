@@ -2,4 +2,14 @@
 #in ra nhung chuoi nao bat dau voi tu "chatmsg:", thoat chuong trinh bang phim "q"
 #haind
 
-s = raw_input("Moi ban nhap chuoi: ")
+l = list()
+begin = "chatmsg: "
+
+for i in range(5):
+	s = raw_input("Hay nhap chuoi: ")
+	if s == 'q':
+		print l
+		break
+	elif s.startswith(begin):
+		l.append(s)
+
