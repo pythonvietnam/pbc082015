@@ -13,7 +13,7 @@ ds = list()
 while 1: 
 	choice = raw_input("Ban muon nhap thong tin hs?")
 	if choice == 'n':
-		print ds
+		print ds			#danh sach hs
 		break
 	elif choice == 'y':
 		name = raw_input("Hay nhap ten cua ban: ")
@@ -23,15 +23,16 @@ while 1:
 		clas = raw_input("Hoc sinh lop: ")
 		hometw = raw_input("Que quan: ")
 		#Tao dict
-		hs['ho ten'] = name
-		hs['ngay sinh'] = birth
-		hs['gioi tinh'] = sex
-		#hs['dia chi'] = addr
-		#hs['lop'] = clas
-		#hs['que quan'] = hometw
-		#print ds
+		hs['hoten'] = name
+		hs['ngaysinh'] = birth
+		hs['gioitinh'] = sex
+		hs['diachi'] = addr
+		hs['lop'] = clas
+		hs['quequan'] = hometw
+
 		#Them hs vao ds
 		ds.append(hs)
+		
 
 
 
