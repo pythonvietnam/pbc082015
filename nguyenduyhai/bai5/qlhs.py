@@ -25,10 +25,12 @@ def themHS():
 	name = raw_input("Ho va ten: ")
 	birth = raw_input("Ngay sinh: ")
 	addr = raw_input("Dia chi: ")
+
 	#Tao dict
 	hs['Ho ten'] = name
 	hs['Ngay sinh'] = birth
 	hs['Dia chi'] = addr
+
 	#Them hoc sinh vao danh sach
 	ds.append(hs)
 	print ""
