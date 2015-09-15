@@ -2,6 +2,7 @@
 #haind
 #python
 
+#tao menu lua chon
 def menu():
 	print '''Chao mung ban den voi chuong trinh Quan ly hoc sinh!
 
@@ -11,10 +12,12 @@ def menu():
 		3. Thoat chuong trinh (quit)'''
 	return input("Moi ban lua chon: ")
 
+ds = list()
+#chuc nang them moi hoc sinh
 def themHS():
 	print "Ban da lua chon Them moi hoc sinh"
 	hs = dict()
-	ds = list()
+
 	name = raw_input("Ho va ten: ")
 	birth = raw_input("Ngay sinh: ")
 	addr = raw_input("Dia chi: ")
@@ -28,7 +31,8 @@ def themHS():
 	print "Thong tin hoc sinh vua duoc them vao: %s"%(ds)
 	print ""
 
-def timkiemHS():
+#chuc nang tim kiem hoc sinh
+def timHS():
 	print "Ban da lua chon Tim kiem hoc sinh"
 	timkiem = raw_input("Moi ban nhap ten hoc sinh muon tim: ")
 	ketquatim = list()
@@ -36,7 +40,10 @@ def timkiemHS():
 		if i['Ho ten'] == timkiem:
 			ketquatim.append(i)
 	print ""
-	
+	print "Da ket thuc tim kiem. Ket qua tim kiem la: "
+	print ketquatim
+	print ""
+
 vonglap = 1
 choice = 0
 while vonglap == 1:
@@ -44,7 +51,7 @@ while vonglap == 1:
 	if choice == 1:
 		themHS()
 	elif choice == 2:
-		timkiemHS()
+		timHS()
 	elif choice == 3:
 		vonglap = 0
 
