@@ -12,7 +12,9 @@ def menu():
 		3. Thoat chuong trinh (quit)'''
 	return input("Moi ban lua chon: ")
 
-ds = list()
+#tao danh sach lam bien global
+ds = list()		
+
 #chuc nang them moi hoc sinh
 def themHS():
 	print "Ban da lua chon Them moi hoc sinh"
@@ -44,6 +46,7 @@ def timHS():
 	print ketquatim
 	print ""
 
+#thuc hien vong lap chuong trinh
 vonglap = 1
 choice = 0
 while vonglap == 1:
