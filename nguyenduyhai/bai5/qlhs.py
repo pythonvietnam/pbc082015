@@ -25,7 +25,7 @@ def themHS():
 	name = raw_input("Ho va ten: ")
 	birth = raw_input("Ngay sinh: ")
 	addr = raw_input("Dia chi: ")
-
+	global ds
 	#Tao dict
 	hs['Ho ten'] = name
 	hs['Ngay sinh'] = birth

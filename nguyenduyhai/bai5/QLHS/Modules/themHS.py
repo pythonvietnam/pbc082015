@@ -6,7 +6,8 @@
 def themHS():
 	print "Ban da lua chon Them moi hoc sinh"
 	hs = dict()
-
+	global ds
+	
 	name = raw_input("Ho va ten: ")
 	birth = raw_input("Ngay sinh: ")
 	addr = raw_input("Dia chi: ")
@@ -15,6 +16,7 @@ def themHS():
 	hs['Ho ten'] = name
 	hs['Ngay sinh'] = birth
 	hs['Dia chi'] = addr
+
 
 	#Them hoc sinh vao danh sach
 	ds.append(hs)

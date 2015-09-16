@@ -3,6 +3,8 @@
 #haind
 #python
 
+ds = list()
+
 from Modules import menu
 menu.menu()
 
