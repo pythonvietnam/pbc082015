@@ -14,13 +14,12 @@ Nhap vao thong tin cua cua nguoi dung bao gom:
 6. Que quan
 '''
 l=list()
-ds=dict()
-l1=list()
 while 1:
-	n = raw_input("Ban co muon nhap tiep du lieu nguoi dung (Y/N): ")
+	n = raw_input("Ban muon lam gi")
 	if n == "n" or n == "N":
 		break
-	elif n == "y" or n == "Y":
+	elif n == "1":
+		ds=dict()
 		a = raw_input("Ho va Ten: ")
 		b = raw_input("Ngay sinh: ")
 		c = raw_input("Gioi tinh: ")
@@ -34,11 +33,12 @@ while 1:
 		ds['Lop hoc'] = e
 		ds['Que quan'] = f
 		l.append(ds)
-while 1:
-	m = raw_input("Ban co muon tim kiem du lieu nguoi dung (Y/N): ")
-	if m == "n" or m == "N":
-		break
-	elif m == "y" or m == "Y":
-		k = raw_input("Search keyword: ")
-		u = [x[0] for x in a].index(k)
-		print l[u]
+	elif n == "2":
+		print " Tim kiem hoc sinh"
+		qr = raw_input("Nhap vao ten ban muon tim kiem: ")	
+		kqtk = list()
+		for i in ds:
+			if i["Ho va Ten"]== qr:
+				kqtk.append(i)
+		print "Ket qua tim kiem"
+		print kqtk
