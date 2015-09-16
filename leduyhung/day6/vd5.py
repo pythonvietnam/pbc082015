@@ -14,13 +14,13 @@ Nhap vao thong tin cua cua nguoi dung bao gom:
 6. Que quan
 '''
 l=list()
-ds=dict()
 l1=list()
 while 1:
 	n = raw_input("Ban co muon nhap tiep du lieu nguoi dung (Y/N): ")
 	if n == "n" or n == "N":
 		break
 	elif n == "y" or n == "Y":
+		ds=dict()
 		a = raw_input("Ho va Ten: ")
 		b = raw_input("Ngay sinh: ")
 		c = raw_input("Gioi tinh: ")
