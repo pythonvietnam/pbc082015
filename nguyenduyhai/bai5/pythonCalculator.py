@@ -5,6 +5,7 @@
 #/usr/bin/python
 # coding: utf-8
 
+#tao ham Menu hien thi
 def menu():
 	print '''
 	Chao mung ban den voi chuong trinh May tinh!
@@ -18,6 +19,7 @@ def menu():
 		'''
 	return input("Moi ban lua chon: ")
 
+#tao ham phep tinh Cong
 def add():
 	print "Cam on ban da lua chon, ban vua chon thuc hien phep Cong (+)"
 	num1 = input("So hang thu nhat: ")
@@ -26,6 +28,7 @@ def add():
 	print num1, "+", num2, "=", num1 + num2
 	print ""
 
+#tao ham phep tinh Tru
 def sub():
 	print "Cam on ban da lua chon, ban vua chon thuc hien phep Tru (-)"
 	num1 = input("So hang thu nhat: ")
@@ -34,6 +37,7 @@ def sub():
 	print num2, "-", num1, "=", num2 - num1
 	print ""
 
+#tao ham phep tinh Nhan
 def mul():
 	print "Cam on ban da lua chon, ban vua chon thuc hien phep Nhan (*)"
 	num1 = input("So hang thu nhat: ")
@@ -42,6 +46,7 @@ def mul():
 	print num1, "*", num2, "=", num1 * num2
 	print ""
 
+#tao ham phep tinh Chia
 def div():
 	print "Cam on ban da lua chon, ban vua chon thuc hien phep Chia (/)"
 	num1 = input("So hang thu nhat: ")
@@ -50,6 +55,7 @@ def div():
 	print num1, "/", num2, "=", num1 / num2
 	print ""
 
+#vong lap lua chon chuong trinh
 vonglap = 1
 choice = 0
 while vonglap == 1:
