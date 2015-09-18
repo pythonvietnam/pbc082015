@@ -33,8 +33,6 @@ def creatFile():
 		print 'Flie not exists. Create new file'
 		with open(filename, 'wb') as fh:
 			fh.write(content)
-if __name__ == '__main__':
-	main()
 
 #chuc nang lam viec voi file CSV
 def creatCSV():
@@ -53,8 +51,6 @@ def creatCSV():
 		reader = csv.reader(fh, delimiter=',', quotechar='|')
 		for row in reader:
 			print row
-if __name__ == '__main__':
-	main()
 
 #chuc nang lam viec voi file ZIP
 def creatZIP():
@@ -76,5 +72,3 @@ def creatZIP():
 		print 'File not exists. Creat new file'
 		with zipfile.ZipFile(filename, 'w') as zf:
 			zf.write(content)
-if __name__ == '__main__':
-	main()
