@@ -3,7 +3,7 @@
 import csv
 
 with open('test1.csv' , 'wb') as fh:
-	writer = csv.writer(fh, delimiter=',', quotechar='|', quoting=csv.QUOTE_MINIMAL)
+	writer = csv.writer(fh, delimiter=',', quotechar='|', quoting=csv.QUOTE_MINIMAL) #demiliter la theo chuan cua csv
 	writer.writerow(['haind', 'fpt', 'com', 'vn', 'admin'])
 	print 'Done writing!'
 
