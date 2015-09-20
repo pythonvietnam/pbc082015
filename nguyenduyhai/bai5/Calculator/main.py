@@ -20,6 +20,6 @@ while vonglap == 1:
 	elif choice == 5:
 		vonglap = 0
 
-
+print "Cam on ban da su dung chuong trinh"
 
 	
