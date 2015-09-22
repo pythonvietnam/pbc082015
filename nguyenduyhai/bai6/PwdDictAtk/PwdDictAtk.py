@@ -5,16 +5,18 @@
 import os
 import zipfile
 
+#Module chuc nang doc file Zip va giai nen file Zip co chua mat khau
 def checkZip(filename, password):
 	try:
 		z = zipfile.ZipFile(filename)
 		z.extractall(pwd = password)
 		print "Mat khau chinh xac."
 		return password
-	except Exception, e: 
-		print e
+	except Exception, a: 
+		print a
 		return False
 
+#Module chuc nang doc file Dictionary Pass va thuc hien check khi giai nen file Zip
 def readPWD(filename, dictfile):
 	try:
 		keys = open(dictfile, 'r')
@@ -28,8 +30,8 @@ def readPWD(filename, dictfile):
 			else:
 				print "Mat khau khong chinh xac!"
 		return
-	except Exception, e:
-		print e
+	except Exception, a:
+		print a
 		return False
 
 
