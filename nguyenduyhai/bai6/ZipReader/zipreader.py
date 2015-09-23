@@ -38,10 +38,10 @@ def giainenZip(filegiainen):
 
 	if (os.access(filegiainen, os.R_OK) and os.path.isfile(filegiainen)):
 		print ''
-		print 'File da ton tai, co the truy nhap OK'
+		print 'Dang thuc hien giai nen, ket qua giai nen: '
 		z = zipfile.ZipFile(filegiainen)
 		z.extractall()
-
+		print z.namelist()
 		print "Da thuc hien giai nen thanh cong"
 
 	else: 
