@@ -12,8 +12,7 @@ def checkZip(filename, password):
 		z.extractall(pwd = password)
 		print "Mat khau chinh xac."
 		return password
-	except Exception, a: 
-		print a
+	except:
 		return False
 
 #Module chuc nang doc file Dictionary Pass va thuc hien check khi giai nen file Zip
@@ -30,8 +29,7 @@ def readPWD(filename, dictfile):
 			else:
 				print "Mat khau khong chinh xac!"
 		return
-	except Exception, a:
-		print a
+	except:
 		return False
 
 
