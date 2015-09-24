@@ -62,7 +62,7 @@ def saveHS():
 	datajson = json.dumps(ds)
 	#ghi vao file text
 	try:
-		with open ("dbhs.txt","wb") as fh:
+		with open ("dbhs.txt","a+") as fh:
 			fh.write(datajson)
 		print "Da luu danh sach hoc sinh thanh cong."
 	except e, Exception:
@@ -79,6 +79,23 @@ def loadHS(filename):
 			print "Da load danh sach hoc sinh!" 
 	else:
 		print "File du lieu khong dung."
+
+#Doc file du lieu hoc sinh
+#def readHS(filepath):
+#	from os.path import exists
+
+	#file = raw_input ("Nhap vao duong dan file: ")
+
+#	if exists(filepath):
+#	   	mofile = open(filepath, 'r')
+#    	i = 0
+#    	for line in mofile:
+#        	i += 1
+#        	print line.rstrip()
+   
+#    	print "So dong:", i
+#	else:
+#    	print "Khong ton tai file"
 
 #thuc hien vong lap chuong trinh
 vonglap = 1
