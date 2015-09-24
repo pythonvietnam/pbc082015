@@ -14,24 +14,13 @@ def menu():
 		1. Them moi hoc sinh
 		2. Tim kiem hoc sinh
 		3. Load du lieu hoc sinh
-		4. Thoat chuong trinh (quit)
+		4. Luu du lieu hoc sinh
+		5. Thoat chuong trinh (quit)
 		'''
 	return input("Moi ban lua chon: ")
 
 #tao danh sach lam bien global
 ds = list()		
-
-#load lai du lieu hoc sinh
-def loadHS(filename):
-	global ds 
-	if (os.path.isfile(filename)):
-		print "Da co file, bat dau load danh sach hoc sinh."
-		with open(filename, 'rb') as fh:
-			data = fh.readline()
-			ds = json.loads(data)
-		print "Da load danh sach hoc sinh!"
-	else:
-		print "File du lieu khong dung."
 
 #chuc nang them moi hoc sinh
 def themHS():
@@ -79,6 +68,18 @@ def saveHS():
 	except e, Exception:
 		print "Co loi khi luu file"
 
+#load lai du lieu hoc sinh
+def loadHS(filename):
+	global ds 
+	if (os.path.isfile(filename)):
+		print "Da co file, bat dau load danh sach hoc sinh."
+		with open(filename, 'rb') as fh:
+			data = fh.readline()
+			ds = json.loads(data)
+			print "Da load danh sach hoc sinh!" 
+	else:
+		print "File du lieu khong dung."
+
 #thuc hien vong lap chuong trinh
 vonglap = 1
 choice = 0
@@ -92,6 +93,7 @@ while vonglap == 1:
 	elif choice == 3:
 		loadHS("dbhs.txt")
 	elif choice == 4:
-		vonglap = 0
 		saveHS()
+	elif choice == 5:
+		vonglap = 0
 print "Cam on ban da su dung chuong trinh"
