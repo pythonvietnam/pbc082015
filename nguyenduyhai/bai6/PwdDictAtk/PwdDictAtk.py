@@ -19,11 +19,11 @@ def checkZip(filename, password):
 def readPWD(filename, dictfile):
 	try:
 		keys = open(dictfile, 'r')
-		for key in keys.readlines():
+		for key in keys: #.readlines():
 			key = key.strip('\n')
 			print "Dang thuc hien thu mat khau voi mat khau la: " + key 
 			checkresult = checkZip(filename, key)
-			if checkresult != False:
+			if checkresult: #!= False:
 				print "Da tim thay mat khau la: " + checkresult
 				exit(0)
 			else:

@@ -2,7 +2,6 @@
 #haind
 #python
 
-
 import json
 import os
 
@@ -14,13 +13,25 @@ def menu():
 		Su dung:
 		1. Them moi hoc sinh
 		2. Tim kiem hoc sinh
-		3. Load danh sach hoc sinh
+		3. Load du lieu hoc sinh
 		4. Thoat chuong trinh (quit)
 		'''
 	return input("Moi ban lua chon: ")
 
 #tao danh sach lam bien global
 ds = list()		
+
+#load lai du lieu hoc sinh
+def loadHS(filename):
+	global ds 
+	if (os.path.isfile(filename)):
+		print "Da co file, bat dau load danh sach hoc sinh."
+		with open(filename, 'rb') as fh:
+			data = fh.readline()
+			ds = json.loads(data)
+		print "Da load danh sach hoc sinh!"
+	else:
+		print "File du lieu khong dung."
 
 #chuc nang them moi hoc sinh
 def themHS():
@@ -55,10 +66,23 @@ def timHS():
 	print ketquatim
 	print ""
 
+#luu hs vao file
+def saveHS():
+	global ds
+	#conver ds ra json
+	datajson = json.dumps(ds)
+	#ghi vao file text
+	try:
+		with open ("dbhs.txt","wb") as fh:
+			fh.write(datajson)
+		print "Da luu danh sach hoc sinh thanh cong."
+	except e, Exception:
+		print "Co loi khi luu file"
+
 #thuc hien vong lap chuong trinh
 vonglap = 1
 choice = 0
-jsonout = json.dumps()
+
 while vonglap == 1:
 	choice = menu()
 	if choice == 1:
@@ -66,12 +90,8 @@ while vonglap == 1:
 	elif choice == 2:
 		timHS()
 	elif choice == 3:
-		with open('data.txt','r') as fh:
-			thuvien = json.loads(jsonout)
-	elif choice == 4:	
-		jsonout = json.dumps(ds)
-		with open('data.txt', 'w+') as fh:
-			fh.write(jsonout)
-			print "Da thuc hien luu danh sach."
+		loadHS("dbhs.txt")
+	elif choice == 4:
 		vonglap = 0
+		saveHS()
 print "Cam on ban da su dung chuong trinh"

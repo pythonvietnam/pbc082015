@@ -3,6 +3,8 @@
 #python
 
 #tao menu lua chon
+import json
+
 def menu():
 	print '''
 	Chao mung ban den voi chuong trinh Quan ly hoc sinh!
