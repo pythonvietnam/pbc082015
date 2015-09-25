@@ -13,9 +13,7 @@ def config_parse(configfile):
             pass
         else:
             line = line.split('=')
-            a = line[0].strip()
-            b = line[1].strip()
-            D[a] = b
+
     return D
 
 def main(configfile = 'D:\Learning\config.cfg'):
