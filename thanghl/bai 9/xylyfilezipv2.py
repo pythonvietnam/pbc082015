@@ -30,12 +30,6 @@ def giainenpw(readpw):
 			except:
 				pass
 		print password
-#def scanpass(readtxt):
-#	with open(dictionaryAttk.txt, 'r') as rtxt:
-	#	for passzip in rtxt:
-#			passex=giainenpw(readpw,passzip)
-	#		if passex:
-	#			print 'Pass =' + passzip + '\n'
 
 
 				
